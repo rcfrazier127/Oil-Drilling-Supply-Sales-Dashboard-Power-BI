@@ -1,0 +1,44 @@
+Relevant DAX Measures:
+-----------------------------------------------------------------------------------------------------------------------------
+Cost of Goods Sold = 
+    SUMX('Sales', 
+        'Sales'[Total Unit Cost] * 'Sales'[Order Quantity]
+)
+-----------------------------------------------------------------------------------------------------------------------------
+Gross Profit Margin % = 
+    CALCULATE(
+        SUM([Total Sales]) - SUM([Total Unit Cost])
+            ) / 
+    SUM('Sales'[Total Sales]
+)
+-----------------------------------------------------------------------------------------------------------------------------
+Prior Year Sales = 
+CALCULATE(
+    SUM(Sales[Total Sales]),
+    DATEADD('Date'[Date], -1, YEAR)
+)
+-----------------------------------------------------------------------------------------------------------------------------
+Total Profit = (
+    SUM('Sales'[Total Sales]) - SUM('Sales'[Total Unit Cost])
+)
+-----------------------------------------------------------------------------------------------------------------------------
+YoY Sales Growth % = 
+VAR CurrentYearSales = CALCULATE(
+    SUM('Sales'[Total Sales]),
+    FILTER(
+        ALL('Date'),
+        YEAR('Date'[Date]) = YEAR(MAX('Date'[Date]))
+    )
+)
+
+VAR PriorYearSales = CALCULATE(
+    SUM('Sales'[Total Sales]),
+    FILTER(
+        ALL('Date'),
+        YEAR('Date'[Date]) = YEAR(MAX('Date'[Date])) - 1
+    )
+)
+
+RETURN
+    DIVIDE(CurrentYearSales - PriorYearSales, PriorYearSales)
+-----------------------------------------------------------------------------------------------------------------------------
