@@ -24,10 +24,6 @@ CALCULATE(
     DATEADD('Date'[Date], -1, YEAR)
 )
 -----------------------------------------------------------------------------------------------------------------------------
-Total Profit = (
-    SUM('Sales'[Total Sales]) - SUM('Sales'[Total Unit Cost])
-)
------------------------------------------------------------------------------------------------------------------------------
 YoY Sales Growth % = 
 VAR CurrentYearSales = CALCULATE(
     SUM('Sales'[Total Sales]),
