@@ -4,7 +4,7 @@ Gross Profit =
 CALCULATE(
         SUM('Sales'[Total Sales]) - 
             SUMX('Sales', 'Sales'[Total Unit Cost] * 'Sales'[Order Quantity])
-    )
+)
 -----------------------------------------------------------------------------------------------------------------------------
 Cost of Goods Sold = 
     SUMX('Sales', 
