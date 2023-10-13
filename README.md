@@ -22,7 +22,7 @@ A simple star scheme model was used in the creaton of the tables used in this da
 
 ### Dashboard
 
-
+The Sales Analysis Dashboard provides an intuitive and informative overview of sales, product, order volume, and customer data. Featured are slicers allowing the user to filter between different products, customers, cities, and distribution channels to examine a more detailed view of sales performance data and financial metrics. Graphical visuals display sales % growth by customer and product comparison by sales and cost. Time series visuals show sales and gross profit trends over time in addition to order volume, which can help identify seasonal patterns. Sales and order volumes are also broken down according to distribution channel. Featured in the lower left corner is a reset button to revert all slicer selections back to their default settings.
 
 <img width="1564" alt="image" src="https://github.com/rcfrazier127/Oil-Drilling-Supply-Sales-Dashboard-in-Power-BI/assets/63532077/ad67f964-8cc3-4cf9-9c0f-aae767cce80a">
 
