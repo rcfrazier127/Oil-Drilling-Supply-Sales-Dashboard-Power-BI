@@ -12,10 +12,12 @@ Cost of Goods Sold =
 )
 -----------------------------------------------------------------------------------------------------------------------------
 Gross Profit Margin % = 
-    CALCULATE(
-        SUM([Total Sales]) - SUM([Total Unit Cost])
-            ) / 
-    SUM('Sales'[Total Sales]
+CALCULATE(
+    Divide(
+        SUM('Sales'[Total Sales]) - 
+            SUMX('Sales', 'Sales'[Total Unit Cost] * 
+                'Sales'[Order Quantity]), SUM('Sales'[Total Sales])
+    )
 )
 -----------------------------------------------------------------------------------------------------------------------------
 Prior Year Sales = 
