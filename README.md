@@ -16,7 +16,7 @@ The preparation of the data consisted of standardization of formatting and remov
 
 ![Data Model Screenshot](https://github.com/rcfrazier127/Sales-Analysis-Dashboard-Power-BI/assets/63532077/24312a2a-472d-45df-b389-6df88ecb926b)
 
-A simple star scheme model was used in the creaton of the tables used in this dashboard. This model features a central 'Sales' fact table and 'Customer', 'Order', 'Product', 'Region', and 'Channel' dimension tables. Additionally, a custom date table was created. Presently, this dashboard only utilizes several DAX measures so they are kept in the fact table.
+A simple star schema model was used in the creaton of the tables used in this dashboard. This model features a central 'Sales' fact table and 'Customer', 'Order', 'Product', 'Region', and 'Channel' dimension tables. Additionally, a custom date table was created. Presently, this dashboard only utilizes several DAX measures so they are kept in the fact table.
 
 ### Dashboard Page
 
