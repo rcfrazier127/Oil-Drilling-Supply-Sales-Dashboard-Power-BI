@@ -14,11 +14,12 @@ The preparation of the data consisted of standardization of formatting and remov
 
 ### Data Model
 
-![Data Model Screenshot](https://github.com/rcfrazier127/Sales-Analysis-Dashboard-Power-BI/assets/63532077/24312a2a-472d-45df-b389-6df88ecb926b)
-A simple star schema model was used in the creaton of the tables used in this dashboard. This model features a central 'Sales' fact table and 'Customer', 'Order', 'Product', 'Region', and 'Channel' dimension tables. Additionally, a custom date table was created. Presently, this dashboard only utilizes several DAX measures so they are kept in the fact table.
+<img width="1091" alt="image" src="https://github.com/rcfrazier127/Oil-Drilling-Supply-Sales-Dashboard-Power-BI/assets/63532077/9bc9e91d-ae0d-4b31-821b-a1961e6e90a3">
+
+A simple star schema model was used in the creaton of the tables used in this dashboard. This model features a central 'Sales' fact table and 'Customer', 'Order', 'Product', 'Region', and 'Channel' dimension tables. Additionally, a custom date table was created. A separate sales measures table holds the DAX measures for this model.
 
 ### Dashboard Page
 
-<img width="1564" alt="image" src="https://github.com/rcfrazier127/Oil-Drilling-Supply-Sales-Dashboard-in-Power-BI/assets/63532077/ad67f964-8cc3-4cf9-9c0f-aae767cce80a">
+<img width="1565" alt="image" src="https://github.com/rcfrazier127/Oil-Drilling-Supply-Sales-Dashboard-Power-BI/assets/63532077/941b7d7c-4bd6-4abc-b516-6d9a6872302b">
 
 The Sales Analysis Dashboard provides an intuitive and informative overview of sales, product, order volume, and customer data. Featured are slicers allowing the user to filter between different products, customers, cities, and distribution channels to examine a more detailed view of sales performance data and financial metrics. Graphical visuals display sales % growth by customer and product comparison by sales and cost. Time series visuals show sales and gross profit trends over time in addition to order volume, which can help identify seasonal patterns. Sales and order volumes are also broken down according to distribution channel. Featured in the lower left corner is a reset button to revert all slicer selections back to their default settings.
